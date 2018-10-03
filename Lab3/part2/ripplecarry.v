@@ -9,7 +9,7 @@ module fulladder(A, B, cin, S, cout);
 	assign cout = (A & cin) | (B & cin) | (A & B);
 endmodule
 
-module ripplecarryadder(SW, LEDR);
+module ripplecarry(SW, LEDR);
 	input [8:0] SW;
 	output [7:0] LEDR;
 

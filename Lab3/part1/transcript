@@ -1,0 +1,165 @@
+ls
+# mux7to1.do
+# mux7to1.v
+# transcript
+# vsim.wlf
+# work
+pwd
+# /h/u6/c6/05/ahluwa41/third_year/csc258/Lab3/part1
+cd ..
+cd part2
+ls
+# ripplecarry.do
+# rippleCarry.v
+do ripplecarry.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:57 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# ** Error: (vlog-7) Failed to open design unit file "ripplecarry.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 14:52:57 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns ripplecarry.v"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:04 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# ** Error: (vlog-7) Failed to open design unit file "ripplecarry.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 14:53:04 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns ripplecarry.v"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:39 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarryadder
+# 
+# Top level modules:
+# 	ripplecarryadder
+# End time: 14:53:39 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 14:53:39 on Oct 03,2018
+# ** Error: (vsim-3170) Could not find 'ripplecarry'.
+#         Searched libraries:
+#             /h/u6/c6/05/ahluwa41/third_year/csc258/Lab3/part2/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./ripplecarry.do PAUSED at line 5
+ls
+# ripplecarry.do
+# ripplecarry.v
+# work
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:53:51 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarryadder
+# 
+# Top level modules:
+# 	ripplecarryadder
+# End time: 14:53:51 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 14:53:39 on Oct 03,2018
+# ** Error: (vsim-3170) Could not find 'ripplecarry'.
+#         Searched libraries:
+#             /h/u6/c6/05/ahluwa41/third_year/csc258/Lab3/part2/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./ripplecarry.do PAUSED at line 5
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:16 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 14:54:16 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 14:53:39 on Oct 03,2018
+# Loading work.ripplecarry
+# Loading work.fulladder
+ls
+# ripplecarry.do
+# ripplecarry.v
+# vsim.wlf
+# work
+cd ..
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+quit -sim
+# End time: 14:55:49 on Oct 03,2018, Elapsed time: 0:02:10
+# Errors: 3, Warnings: 0
+ls
+# ripplecarry.do
+# ripplecarry.v
+# vsim.wlf
+# work
+cd ..
+cd part3
+;s
+# ambiguous command name "s": sbrk scale scaleTime scan sccom sccom_capture scgenmod scope scrollbar sdfcom search searchlog see seek seetime selection send send_and_receive sequence_image set setCoverageCutoff setMTIArrayProperty setMTIProperty setStructBackground setStructForeground setStructGeometry setStructSelectBackground setStructSelectForeground setTimeFlags setVSIMClient set_vsim_state set_window_namespace set_windowobj_namespace setenv settings0 shift show showAssertion showFCover siginterror signals_subelement_split sim_image slave_mode sm smodule_image socket source source_examine_popup source_highlight_errors spice_du_image spinbox split splitio sqlite sqlite3 stCopy stCut stDelete stPaste startIndProgressBar starter status statusIntHandler step stimulus_image stop stopIndProgressBar stop_image string string'reverse strncmp structure_binding structure_changed_trigger structure_clear_triggers structure_click_env structure_context_trigger structure_dataset_close structure_destroy structure_image structure_is_follow structure_new_root_dialog structure_restart structure_restart_context structure_restart_prep structure_set_root structure_set_selection structure_set_triggers structure_update_procs_after_run student_edition subTime subst suppress sva_cover_image sva_coverbin_image swapSeparators switch sync_encoding systemc_image systemcdu_image systemclib_image
+ls
+# alu.do
+# alu.v
+do alu.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:56:05 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# -- Compiling module hex_display
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# End time: 14:56:06 on Oct 03,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 14:56:06 on Oct 03,2018
+# Loading work.alu
+# Loading work.ripplecarry
+# Loading work.fulladder
+# Loading work.hex_display
+# Loading work.zero
+# Loading work.one
+# Loading work.two
+# Loading work.three
+# Loading work.four
+# Loading work.five
+# Loading work.six
+# ** Warning: (vsim-3015) alu.v(9): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry1 File: alu.v
+# ** Warning: (vsim-3015) alu.v(14): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry2 File: alu.v
+quit
+# End time: 14:57:11 on Oct 03,2018, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 2
