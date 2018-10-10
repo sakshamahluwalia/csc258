@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/h/u6/c6/05/ahluwa41/third_year/csc258/Lab3/part2
 vfulladder
-Z1 !s110 1538592856
+Z1 !s110 1538599750
 !i10b 1
 !s100 WZ]mNV@9ZcibJI6]7b:zB3
 I<aPz<NLU?Oee9dgz:J:2]0
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1538592856.000000
+Z7 !s108 1538599750.000000
 Z8 !s107 ripplecarry.v|
 Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|ripplecarry.v|
 !i113 1
