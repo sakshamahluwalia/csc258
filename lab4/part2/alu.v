@@ -77,8 +77,9 @@ module register(reset_n, clock, d, q);
 	input [7:0] d;
 	input clock;
 	input reset_n;
-	output reg [7:0] q;
+	output [7:0] q;
 	
+	reg [7:0] q;
 	always @(posedge clock)
 	begin
 		if (reset_n == 1'b0)
