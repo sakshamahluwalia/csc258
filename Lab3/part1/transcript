@@ -1,0 +1,23 @@
+ls
+# mux7to1.do
+# mux7to1.v
+# part1.png
+# transcript
+# vsim.wlf
+# work
+do mux7to1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:58 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns mux7to1.v 
+# -- Compiling module mux7to1
+# 
+# Top level modules:
+# 	mux7to1
+# End time: 16:21:58 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim mux7to1 
+# Start time: 16:21:58 on Oct 03,2018
+# Loading work.mux7to1
+# End time: 16:29:53 on Oct 03,2018, Elapsed time: 0:07:55
+# Errors: 0, Warnings: 0

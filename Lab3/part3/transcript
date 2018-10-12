@@ -1,0 +1,120 @@
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:51:44 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# -- Compiling module hex_display
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# End time: 16:51:44 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 16:51:44 on Oct 03,2018
+# Loading work.alu
+# Loading work.ripplecarry
+# Loading work.fulladder
+# Loading work.hex_display
+# Loading work.zero
+# Loading work.one
+# Loading work.two
+# Loading work.three
+# Loading work.four
+# Loading work.five
+# Loading work.six
+# ** Warning: (vsim-3015) alu.v(9): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry1 File: alu.v
+# ** Warning: (vsim-3015) alu.v(14): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry2 File: alu.v
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:07 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# -- Compiling module hex_display
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# End time: 17:01:08 on Oct 03,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:01:08 on Oct 03,2018, Elapsed time: 0:09:24
+# Errors: 0, Warnings: 2
+# vsim alu 
+# Start time: 17:01:08 on Oct 03,2018
+# Loading work.alu
+# Loading work.ripplecarry
+# Loading work.fulladder
+# Loading work.hex_display
+# Loading work.zero
+# Loading work.one
+# Loading work.two
+# Loading work.three
+# Loading work.four
+# Loading work.five
+# Loading work.six
+# ** Warning: (vsim-3015) alu.v(9): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry1 File: alu.v
+# ** Warning: (vsim-3015) alu.v(14): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry2 File: alu.v
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:03:28 on Oct 03,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# -- Compiling module hex_display
+# -- Compiling module zero
+# -- Compiling module one
+# -- Compiling module two
+# -- Compiling module three
+# -- Compiling module four
+# -- Compiling module five
+# -- Compiling module six
+# 
+# Top level modules:
+# 	alu
+# End time: 17:03:28 on Oct 03,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:03:29 on Oct 03,2018, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 2
+# vsim alu 
+# Start time: 17:03:29 on Oct 03,2018
+# Loading work.alu
+# Loading work.ripplecarry
+# Loading work.fulladder
+# Loading work.hex_display
+# Loading work.zero
+# Loading work.one
+# Loading work.two
+# Loading work.three
+# Loading work.four
+# Loading work.five
+# Loading work.six
+# ** Warning: (vsim-3015) alu.v(9): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry1 File: alu.v
+# ** Warning: (vsim-3015) alu.v(14): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(78).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/carry2 File: alu.v
+# End time: 17:19:02 on Oct 03,2018, Elapsed time: 0:15:33
+# Errors: 0, Warnings: 2
