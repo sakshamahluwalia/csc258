@@ -1,0 +1,261 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab5/partI
+vcounter
+Z1 !s110 1539804618
+!i10b 1
+!s100 3V3Xch7^:^oPl[Z866iEm1
+IV[oMP9fa?:9LnQnHYeDQQ1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/h/u6/c6/05/ahluwa41/third_year/csc258/Lab5/partI
+Z4 w1539804614
+Z5 8counter.v
+Z6 Fcounter.v
+L0 1
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1539804618.000000
+Z9 !s107 counter.v|
+Z10 !s90 -reportprogress|300|-timescale|1ns/1ns|counter.v|
+!i113 1
+Z11 o-timescale 1ns/1ns
+Z12 tCvgOpt 0
+vcounter8
+R1
+!i10b 1
+!s100 :RTnheVl0T1zZ`WMXXNOR2
+IG5iA8hIj8@?bOARG=XdH23
+R2
+R3
+R4
+R5
+R6
+L0 15
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vfive
+R1
+!i10b 1
+!s100 RaQ`igkK>]UDiN;E1bPZk1
+Io=f^jA_CaD@@a3PAD3N_=2
+R2
+R3
+R4
+R5
+R6
+L0 165
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vfour
+R1
+!i10b 1
+!s100 _H4]?6K?nPnRzU^dalGlO1
+I:mOVPOaPA4L>13hY]dSXV3
+R2
+R3
+R4
+R5
+R6
+L0 155
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vhex
+R1
+!i10b 1
+!s100 HiL^43Wg?9U]d=5NXZ]=L0
+Ih]d4De7zB=W4i5z6kHBT`1
+R2
+R3
+R4
+R5
+R6
+L0 59
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vone
+R1
+!i10b 1
+!s100 30fd7eEm1ZHo20z1M]@a81
+IdYoWC1YPLdX]jCRQ_JUVT1
+R2
+R3
+R4
+R5
+R6
+L0 125
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vsix
+R1
+!i10b 1
+!s100 K3Yc12<>7[eHC9jYReNE>2
+I21ZY>HTnCeNIBP:Efo[ck2
+R2
+R3
+R4
+R5
+R6
+L0 175
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vt_ff
+R1
+!i10b 1
+!s100 KEI2c4@DUW2GXl=d<I?8U1
+I72W5<c?m<3lE2I;TgiOOQ3
+R2
+R3
+R4
+R5
+R6
+L0 40
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtff
+!s110 1477341655
+!i10b 1
+!s100 2?HCACO4B1H^;;gBNaozN3
+IfYRM3ZVIK7l0]o02KMO:c0
+R2
+R0
+w1477341469
+R5
+R6
+L0 26
+OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1477341655.000000
+R9
+R10
+!i113 1
+R11
+vthree
+R1
+!i10b 1
+!s100 L:eZ07HUhlPb9FzXfYefG3
+Iha:]D01f5P1n]@jKCL>240
+R2
+R3
+R4
+R5
+R6
+L0 145
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtwo
+R1
+!i10b 1
+!s100 =S7GI`PMPY=]gVZN2WSjY2
+IJ<97kFNBz[kgDUnc1cAU<0
+R2
+R3
+R4
+R5
+R6
+L0 135
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vzero
+R1
+!i10b 1
+!s100 3Eh_8LjPdm^HG8PW`_1H00
+I>mJ@gZPcRn7g6LloVCCYP3
+R2
+R3
+R4
+R5
+R6
+L0 115
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
