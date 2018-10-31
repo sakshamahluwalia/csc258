@@ -1,56 +1,39 @@
-cd Lab4
-# couldn't change working directory to "Lab4": no such file or directory
 ls
 # Lab2
 # Lab3
-# lab4
+# Lab4
+# Lab5
+# Lab6
 # transcript
-cd lab4
+cd Lab6
 ls
+# CSC258_Fall2018_Lab6.pdf
+# part1
 # part2
-# part3
 cd part2
 ls
-# alu.do
-# alu.v
-do alu.do
+# poly_function_mod_test.do
+# poly_function.v
+do poly_function_mod_test.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:44:10 on Oct 10,2018
-# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
-# -- Compiling module alu
-# -- Compiling module register
-# -- Compiling module fulladder
-# -- Compiling module ripplecarry
-# -- Compiling module hex_display
-# -- Compiling module zero
-# -- Compiling module one
-# -- Compiling module two
-# -- Compiling module three
-# -- Compiling module four
-# -- Compiling module five
-# -- Compiling module six
+# Start time: 17:13:11 on Oct 31,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module fpga_top
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
 # 
 # Top level modules:
-# 	alu
-# End time: 10:44:11 on Oct 10,2018, Elapsed time: 0:00:01
+# 	fpga_top
+# End time: 17:13:12 on Oct 31,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim alu 
-# Start time: 10:44:11 on Oct 10,2018
-# Loading work.alu
-# Loading work.register
-# Loading work.ripplecarry
-# Loading work.fulladder
-# Loading work.hex_display
-# Loading work.zero
-# Loading work.one
-# Loading work.two
-# Loading work.three
-# Loading work.four
-# Loading work.five
-# Loading work.six
-# ** Warning: (vsim-3015) alu.v(18): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(103).
-#    Time: 0 ns  Iteration: 0  Instance: /alu/carry1 File: alu.v
-# ** Warning: (vsim-3015) alu.v(23): [PCDPC] - Port size (10) does not match connection size (5) for port 'LEDR'. The port definition is at: alu.v(103).
-#    Time: 0 ns  Iteration: 0  Instance: /alu/carry2 File: alu.v
-# End time: 10:52:41 on Oct 10,2018, Elapsed time: 0:08:30
-# Errors: 0, Warnings: 2
+# vsim fpga_top 
+# Start time: 17:13:12 on Oct 31,2018
+# Loading work.fpga_top
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+# Loading work.hex_decoder
+# End time: 17:15:50 on Oct 31,2018, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 0

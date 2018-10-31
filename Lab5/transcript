@@ -1,160 +1,36 @@
+cd partIII
 ls
-# CSC258_Fall2018_Lab5.pdf
-# partI
-# partII
-# partIII
-# transcript
-cd partI
-ls
-# counter.do
-# counter.png
-# counter.v
+# morse_decoder.v
+# morse.do
+# vsim.wlf
 # work
-do counter.
-# Cannot open macro file: counter.
-do counter.do
+do morse.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:25:31 on Oct 17,2018
-# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
-# -- Compiling module counter
-# -- Compiling module counter8
-# -- Compiling module t_ff
-# -- Compiling module hex_display
-# ** Error: counter.v(59): (vlog-2730) Undefined variable: 'HEX'.
-# ** Error: counter.v(59): Identifier must be declared with a port mode: HEX.
-# -- Compiling module zero
-# -- Compiling module one
-# -- Compiling module two
-# -- Compiling module three
-# -- Compiling module four
-# -- Compiling module five
-# -- Compiling module six
-# End time: 15:25:31 on Oct 17,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./counter.do line 3
-# /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns counter.v"
-clear
-# [3;J[H[2J
-do counter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:26:03 on Oct 17,2018
-# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
-# -- Compiling module counter
-# -- Compiling module counter8
-# -- Compiling module t_ff
-# -- Compiling module hex
-# ** Error: counter.v(59): (vlog-2730) Undefined variable: 'HEX'.
-# ** Error: counter.v(59): Identifier must be declared with a port mode: HEX.
-# -- Compiling module zero
-# -- Compiling module one
-# -- Compiling module two
-# -- Compiling module three
-# -- Compiling module four
-# -- Compiling module five
-# -- Compiling module six
-# End time: 15:26:05 on Oct 17,2018, Elapsed time: 0:00:02
-# Errors: 2, Warnings: 0
-# ** Error: /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./counter.do line 3
-# /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns counter.v"
-do counter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:28:29 on Oct 17,2018
-# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
-# -- Compiling module counter
-# ** Error: counter.v(1): (vlog-2730) Undefined variable: 'HEX0'.
-# ** Error: counter.v(1): Identifier must be declared with a port mode: HEX0.
-# -- Compiling module counter8
-# -- Compiling module t_ff
-# -- Compiling module hex
-# ** Error: counter.v(59): (vlog-2730) Undefined variable: 'HEX'.
-# ** Error: counter.v(59): Identifier must be declared with a port mode: HEX.
-# -- Compiling module zero
-# -- Compiling module one
-# -- Compiling module two
-# -- Compiling module three
-# -- Compiling module four
-# -- Compiling module five
-# -- Compiling module six
-# End time: 15:28:30 on Oct 17,2018, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 0
-# ** Error: /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./counter.do line 3
-# /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns counter.v"
-do counter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:29:36 on Oct 17,2018
-# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
-# -- Compiling module counter
-# -- Compiling module counter8
-# -- Compiling module t_ff
-# -- Compiling module hex
-# ** Error: counter.v(59): (vlog-2730) Undefined variable: 'HEX'.
-# ** Error: counter.v(59): Identifier must be declared with a port mode: HEX.
-# -- Compiling module zero
-# -- Compiling module one
-# -- Compiling module two
-# -- Compiling module three
-# -- Compiling module four
-# -- Compiling module five
-# -- Compiling module six
-# End time: 15:29:40 on Oct 17,2018, Elapsed time: 0:00:04
-# Errors: 2, Warnings: 0
-# ** Error: /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./counter.do line 3
-# /s/appspace/quartus-17.0.0.595/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns counter.v"
-do counter.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:18 on Oct 17,2018
-# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
-# -- Compiling module counter
-# -- Compiling module counter8
-# -- Compiling module t_ff
-# -- Compiling module hex
-# -- Compiling module zero
-# -- Compiling module one
-# -- Compiling module two
-# -- Compiling module three
-# -- Compiling module four
-# -- Compiling module five
-# -- Compiling module six
+# Start time: 16:58:02 on Oct 17,2018
+# vlog -reportprogress 300 -timescale 1ns/1ns morse_decoder.v 
+# -- Compiling module morse_decoder
+# -- Compiling module morse
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
 # 
 # Top level modules:
-# 	counter
-# End time: 15:30:18 on Oct 17,2018, Elapsed time: 0:00:00
+# 	morse_decoder
+# End time: 16:58:03 on Oct 17,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim counter 
-# Start time: 15:30:18 on Oct 17,2018
-# Loading work.counter
-# Loading work.counter8
-# Loading work.t_ff
-# Loading work.hex
-# Loading work.zero
-# Loading work.one
-# Loading work.two
-# Loading work.three
-# Loading work.four
-# Loading work.five
-# Loading work.six
-# ** Error (suppressible): (vsim-4008) Object 'enable' not found.
-# Error in macro ./counter.do line 11
-# ** Error (suppressible): (vsim-4008) Object 'enable' not found.
+# vsim morse_decoder 
+# Start time: 16:58:03 on Oct 17,2018
+# Loading work.morse_decoder
+# Loading work.morse
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+# ** Error (suppressible): (vsim-4008) Object 'rate' not found.
+# Error in macro ./morse.do line 10
+# ** Error (suppressible): (vsim-4008) Object 'rate' not found.
 # 
 #     while executing
-# "force {enable} 1"
-# End time: 15:31:24 on Oct 17,2018, Elapsed time: 0:01:06
+# "force {rate} 0"
+# End time: 17:00:58 on Oct 17,2018, Elapsed time: 0:02:55
 # Errors: 1, Warnings: 0
