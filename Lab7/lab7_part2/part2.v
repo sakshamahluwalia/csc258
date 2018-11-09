@@ -177,8 +177,8 @@ module datapath
 		end
 	end
 
-	assign x_out = x + counter[3:2]
-	assign y_out = y + counter[1:0]
+	assign x_out = x + counter[3:2];
+	assign y_out = y + counter[1:0];
 	assign c_out = colour;
 
 endmodule
