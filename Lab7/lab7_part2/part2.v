@@ -98,9 +98,9 @@ module part2
 	control c0(
 		.clock(CLOCK_50),
 		.resetn(resetn),
-		.load_x(ld_x),
-		.load_y(ld_y),
-		.load_colour(ld_colour),
+		.ld_x(ld_x),
+		.ld_y(ld_y),
+		.ld_colour(ld_colour),
 		.load(KEY[3]),
 		.fill(KEY[1]),
 		.writeEnable(writeEn),
@@ -201,9 +201,9 @@ module control
 	input load;
 	input fill;
 
-	output reg load_x;
-	output reg load_y;
-	output reg load_colour;
+	output reg ld_x;
+	output reg ld_y;
+	output reg ld_colour;
 	output reg writeEnable;
 	output reg enable;
 
@@ -240,12 +240,12 @@ module control
 
 	// Output Logic
 	always @(*) begin
-		load_x = 1'b0;
-		load_y = 1'b0;
-		load_colour = 1'b0;
+		ld_x = 1'b0;
+		ld_y = 1'b0;
+		ld_colour = 1'b0;
 		writeEnable = 1'b0;
 
-		case (current_state)
+		case (curr_state)
 			load_x: begin
 				ld_x = 1;
 				enable = 1;
