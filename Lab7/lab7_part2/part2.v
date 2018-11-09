@@ -96,14 +96,14 @@ module part2
 	// Instantiate FSM control
 	// control c0(...);
 	control c0(
-		.clk(CLOCK_50),
+		.clock(CLOCK_50),
 		.resetn(resetn),
-		.ld(KEY[3]),
+		.load_x(ld_x),
+		.load_y(ld_y),
+		.load_colour(ld_colour),
+		.load(KEY[3]),
 		.fill(KEY[1]),
-		.ld_x(ld_x),
-		.ld_y(ld_y),
-		.ld_colour(ld_colour),
-		.writeEn(writeEn),
+		.writeEnable(writeEn),
 		.enable(enable)
 		);
 
@@ -185,29 +185,29 @@ endmodule
 
 module control
 	(
-		clk,
+		clock,
 		resetn,
-		ld,
+		load_x,
+		load_y,
+		load_colour,
+		load,
 		fill,
-		ld_x,
-		ld_y,
-		ld_colour,
-		writeEn,
+		writeEnable,
 		enable
 	);
 
-	input clk;
+	input clock;
 	input resetn;
-	input ld;
+	input load;
 	input fill;
 
-	output reg ld_x;
-	output reg ld_y;
-	output reg ld_colour;
-	output reg writeEn;
+	output reg load_x;
+	output reg load_y;
+	output reg load_colour;
+	output reg writeEnable;
 	output reg enable;
 
-	reg [3:0] current_state, next_state;
+	reg [3:0] curr_state, next_state;
 
 	// States
 	localparam 	load_x 			= 4'd0,
@@ -221,71 +221,71 @@ module control
 
 	// State Table
 	always @(*) begin
-		case (current_state)
+		case (curr_state)
 
-			load_x: next_state = ld ? load_x_wait : load_x;
-			load_x_wait: next_state = ld ? load_x_wait : load_y;
+			load_x: next_state = load ? load_x_wait : load_x;
+			load_x_wait: next_state = load ? load_x_wait : load_y;
 
-			load_y: next_state = ld ? load_y_wait : load_y;
-			load_y_wait: next_state = ld ? load_y_wait : load_colour;
+			load_y: next_state = load ? load_y_wait : load_y;
+			load_y_wait: next_state = load ? load_y_wait : load_colour;
 
-			load_colour: next_state = ld ? load_colour_wait : load_colour;
-			load_colour_wait: next_state = ld ? load_colour_wait : transition;
+			load_colour: next_state = load ? load_colour_wait : load_colour;
+			load_colour_wait: next_state = load ? load_colour_wait : transition;
 
 			transition: next_state = fill ? draw : transition; //introduced this state to use KEY[0]
 
-			draw: next_state = ld ? load_x : draw;
+			draw: next_state = load ? load_x : draw;
 		endcase
 	end
 
 	// Output Logic
 	always @(*) begin
-		ld_x = 1'b0;
-		ld_y = 1'b0;
-		ld_colour = 1'b0;
-		writeEn = 1'b0;
+		load_x = 1'b0;
+		load_y = 1'b0;
+		load_colour = 1'b0;
+		writeEnable = 1'b0;
 
 		case (current_state)
 			load_x: begin
-				ld_x = 1;
+				load_x = 1;
 				enable = 1;
 			end
 			load_x_wait: begin
-				ld_x = 1;
+				load_x = 1;
 				enable = 1;
 			end
 			load_y: begin
-				ld_y = 1;
+				load_y = 1;
 				enable =1;
 			end
 			load_y_wait: begin
-				ld_y = 1;
+				load_y = 1;
 				enable = 1;
 			end
 			load_colour: begin
-				ld_colour = 1;
+				load_colour = 1;
 				enable = 1;
 			end
 			load_colour_wait: begin
-				ld_colour = 1;
+				load_colour = 1;
 				enable = 1;
 			end
 			transition: begin
 				enable = 1;
 			end
 			draw: begin
-				writeEn = 1;
+				writeEnable = 1;
 				enable = 1;
 			end
 		endcase
 	end
 
 	// Current State Register
-	always @(posedge clk) begin
+	always @(posedge clock) begin
 		if (!resetn)
-			current_state <= load_x;
+			curr_state <= load_x;
 		else
-			current_state <= next_state;
+			curr_state <= next_state;
 	end
 
 endmodule
