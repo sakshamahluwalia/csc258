@@ -165,7 +165,7 @@ module datapath
 		end
 	end
 
-	// counter for y
+	// counter for x and y co-ordinates.
 	always @(posedge clock) begin
 		if (!resetn)
 			counter <= 4'b0000;
@@ -207,22 +207,33 @@ module control
 	output reg writeEn;
 	output reg enable;
 
-	reg [2:0] current_state, next_state;
+	reg [3:0] current_state, next_state;
 
 	// States
-	localparam 	load_x = 3'd0,
-				load_x_wait = 3'd1,
-				load_y_colour = 3'd2,
-				load_y_colour_wait = 3'd3,
-				draw = 3'd4;
+	localparam 	load_x 				= 4'd0,
+				load_x_wait 		= 4'd1,
+				load_y 				= 4'd2,
+				load_y_wait 		= 4'd3,
+				load_colour 		= 4'd4,
+				load_colour_wait 	= 4'd5,
+				transition			= 4'd6
+				draw 				= 4'd7;
 
 	// State Table
 	always @(*) begin
 		case (current_state)
+
 			load_x: next_state = ld ? load_x_wait : load_x;
-			load_x_wait: next_state = ld ? load_x_wait : load_y_colour;
-			load_y_colour: next_state = fill ? load_y_colour : load_y_colour;
-			load_y_colour_wait: next_state = fill ? load_y_colour_wait : draw;
+			load_x_wait: next_state = ld ? load_x_wait : load_y;
+
+			load_y: next_state = ld ? load_y_wait : load_y;
+			load_y_wait: next_state = ld ? load_y_wait : load_colour;
+
+			load_colour: next_state = ld ? load_colour_wait : load_colour;
+			load_colour_wait: next_state = ld ? load_colour_wait : transition;
+
+			transition: next_state = fill ? draw : transition; //introduced this state to use KEY[0]
+
 			draw: next_state = ld ? load_x : draw;
 		endcase
 	end
@@ -243,14 +254,23 @@ module control
 				ld_x = 1;
 				enable = 1;
 			end
-			load_y_colour: begin
+			load_y: begin
 				ld_y = 1;
+				enable =1;
+			end
+			load_y_wait: begin
+				ld_y = 1;
+				enable = 1;
+			end
+			load_colour: begin
 				ld_colour = 1;
 				enable = 1;
 			end
-			load_y_colour_wait: begin
-				ld_y = 1;
+			load_colour_wait: begin
 				ld_colour = 1;
+				enable = 1;
+			end
+			transition: begin
 				enable = 1;
 			end
 			draw: begin
