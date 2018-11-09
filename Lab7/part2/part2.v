@@ -98,31 +98,18 @@ module part2
 	control c0(
 		.clock(CLOCK_50),
 		.resetn(resetn),
+		.load(KEY[3]),
+		.drw(KEY[1]),
+		.writeEnable(writeEn),
+		.enable(enable),
 		.ld_x(ld_x),
 		.ld_y(ld_y),
 		.ld_colour(ld_colour),
-		.load(KEY[3]),
-		.fill(KEY[1]),
-		.writeEnable(writeEn),
-		.enable(enable)
 		);
 
 endmodule
 
-module datapath
-	(
-		clock,
-		enable,
-		resetn,
-		c_in,
-		point,
-		load_x,
-		load_y,
-		load_colour,
-		x_out,
-		y_out,
-		c_out
-	);
+module datapath(clock, enable, resetn, c_in, point,	load_x,	load_y,	load_colour, x_out,	y_out, c_out);
 
 	// singlebit inputs
 	input clock;
@@ -183,23 +170,12 @@ module datapath
 
 endmodule
 
-module control
-	(
-		clock,
-		resetn,
-		ld_x,
-		ld_y,
-		ld_colour,
-		load,
-		fill,
-		writeEnable,
-		enable
-	);
+module control(clock, resetn, load, drw, writeEnable, enable, ld_x, ld_y, ld_colour);
 
 	input clock;
 	input resetn;
 	input load;
-	input fill;
+	input drw;
 
 	output reg ld_x;
 	output reg ld_y;
@@ -210,29 +186,24 @@ module control
 	reg [3:0] curr_state, next_state;
 
 	// States
-	localparam 	load_x 			= 4'd0,
-			load_x_wait 		= 4'd1,
-			load_y 			= 4'd2,
-			load_y_wait 		= 4'd3,
-			load_colour 		= 4'd4,
-			load_colour_wait 	= 4'd5,
-			transition		= 4'd6,
-			draw 			= 4'd7;
+	localparam 	load_x 					= 3'd0,
+				load_x_wait 			= 3'd1,
+				load_colour_and_y 		= 3'd2,
+				load_colour_and_y_wait 	= 3'd3,
+				transition				= 3'd4,
+				draw 					= 3'd5;
 
 	// State Table
 	always @(*) begin
 		case (curr_state)
 
 			load_x: next_state = load ? load_x_wait : load_x;
-			load_x_wait: next_state = load ? load_x_wait : load_y;
+			load_x_wait: next_state = load ? load_x_wait : load_colour_and_y;
 
-			load_y: next_state = load ? load_y_wait : load_y;
-			load_y_wait: next_state = load ? load_y_wait : load_colour;
+			load_colour_and_y: next_state = load ? load_colour_and_y_wait : load_colour_and_y;
+			load_colour_and_y_wait: next_state = load ? load_colour_and_y_wait : transition;
 
-			load_colour: next_state = load ? load_colour_wait : load_colour;
-			load_colour_wait: next_state = load ? load_colour_wait : transition;
-
-			transition: next_state = fill ? draw : transition; //introduced this state to use KEY[0]
+			transition: next_state = drw ? draw : transition; //introduced this state to use KEY[0]
 
 			draw: next_state = load ? load_x : draw;
 		endcase
@@ -254,19 +225,13 @@ module control
 				ld_x = 1;
 				enable = 1;
 			end
-			load_y: begin
+			load_colour_and_y: begin
 				ld_y = 1;
-				enable =1;
-			end
-			load_y_wait: begin
-				ld_y = 1;
-				enable = 1;
-			end
-			load_colour: begin
 				ld_colour = 1;
 				enable = 1;
 			end
-			load_colour_wait: begin
+			load_colour_and_y_wait: begin
+				ld_y = 1;
 				ld_colour = 1;
 				enable = 1;
 			end
