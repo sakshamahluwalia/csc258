@@ -187,9 +187,9 @@ module control
 	(
 		clock,
 		resetn,
-		load_x,
-		load_y,
-		load_colour,
+		ld_x,
+		ld_y,
+		ld_colour,
 		load,
 		fill,
 		writeEnable,
@@ -247,27 +247,27 @@ module control
 
 		case (current_state)
 			load_x: begin
-				load_x = 1;
+				ld_x = 1;
 				enable = 1;
 			end
 			load_x_wait: begin
-				load_x = 1;
+				ld_x = 1;
 				enable = 1;
 			end
 			load_y: begin
-				load_y = 1;
+				ld_y = 1;
 				enable =1;
 			end
 			load_y_wait: begin
-				load_y = 1;
+				ld_y = 1;
 				enable = 1;
 			end
 			load_colour: begin
-				load_colour = 1;
+				ld_colour = 1;
 				enable = 1;
 			end
 			load_colour_wait: begin
-				load_colour = 1;
+				ld_colour = 1;
 				enable = 1;
 			end
 			transition: begin
