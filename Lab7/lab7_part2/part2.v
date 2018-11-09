@@ -210,14 +210,14 @@ module control
 	reg [3:0] current_state, next_state;
 
 	// States
-	localparam 	load_x 				= 4'd0,
-				load_x_wait 		= 4'd1,
-				load_y 				= 4'd2,
-				load_y_wait 		= 4'd3,
-				load_colour 		= 4'd4,
-				load_colour_wait 	= 4'd5,
-				transition			= 4'd6
-				draw 				= 4'd7;
+	localparam 	load_x 			= 4'd0,
+			load_x_wait 		= 4'd1,
+			load_y 			= 4'd2,
+			load_y_wait 		= 4'd3,
+			load_colour 		= 4'd4,
+			load_colour_wait 	= 4'd5,
+			transition		= 4'd6,
+			draw 			= 4'd7;
 
 	// State Table
 	always @(*) begin
