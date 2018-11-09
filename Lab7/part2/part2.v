@@ -104,7 +104,7 @@ module part2
 		.enable(enable),
 		.ld_x(ld_x),
 		.ld_y(ld_y),
-		.ld_colour(ld_colour),
+		.ld_colour(ld_colour)
 		);
 
 endmodule
