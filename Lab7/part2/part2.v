@@ -1,4 +1,43 @@
-// Part 2 skeleton
+module q3(clock, resetn, load, drw, c_in, point, x, y, c_out);
+
+	input clock, resetn, load, drw;
+	input [2:0] c_in;
+	input [6:0] point;
+	output [7:0] x;
+	output [6:0] y;
+	output [2:0] c_out;
+
+	wire ld_x, ld_y, ld_colour, writeEn, enable;
+
+	datapath d0(
+		.clock(clock),
+		.enable(enable),
+		.resetn(resetn),
+		.c_in(c_in),
+		.point(point),
+		.load_x(ld_x),
+		.load_y(ld_y),
+		.load_colour(ld_colour),
+		.x_out(x),
+		.y_out(y),
+		.c_out(colour)
+		);
+
+	// Instantiate FSM control
+	// control c0(...);
+	control c0(
+		.clock(clock),
+		.resetn(resetn),
+		.load(load),
+		.drw(drw),
+		.writeEnable(writeEn),
+		.enable(enable),
+		.ld_x(ld_x),
+		.ld_y(ld_y),
+		.ld_colour(ld_colour)
+		);
+
+endmodule
 
 module part2
 	(
