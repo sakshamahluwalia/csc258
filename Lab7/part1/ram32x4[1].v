@@ -5,12 +5,12 @@ module ram_topmodule(SW, KEY, HEX5, HEX4, HEX2, HEX0)
 	
 	wire [3:0] out;
 	
-	ram32x4 r1(SW[8:4], KEY[0], SW[3:0], SW[9], out);
+	ram32x4 ram1(SW[8:4], KEY[0], SW[3:0], SW[9], out);
 	
-	hex_decoder hex5({3'b0, SW[8]}, HEX5);
-	hex_decoder hex4(SW[7:4], HEX4);
 	hex_decoder hex2(SW[3:0], HEX2);
 	hex_decoder hex0(out, HEX0);
+	hex_decoder hex5({3'b0, SW[8]}, HEX5);
+	hex_decoder hex4(SW[7:4], HEX4);
 
 endmodule
 
