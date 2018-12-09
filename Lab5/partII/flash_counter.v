@@ -18,9 +18,9 @@ module counter(clk, reset_n, enable, d, par_load, freq, q);
 	wire [27:0] hz1, hz05, hz025;
 	reg out;
 	
-	rate_divider r1hz(clk, reset_n, enable,{2'b00, 26'd49999999},hz1);
-	rate_divider r05hz(clk, reset_n, enable,{1'b0, 27'd99999999},hz05); 
-	rate_divider r025hz(clk, reset_n, enable,{28'd499999999},hz025); 
+	rate_divider r1hz(clk, reset_n, enable, {2'b00, 26'd49999999}, hz1);
+	rate_divider r05hz(clk, reset_n, enable, {1'b0, 27'd99999999}, hz05); 
+	rate_divider r025hz(clk, reset_n, enable, {28'd499999999}, hz025); 
 	
 	always @(*)
 		begin
